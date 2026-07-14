@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewRo Solves - Math Circle of New Rochelle</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --accent: #d69e2e;
+            --light: #f7fafc;
+            --dark: #2d3748;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1.5rem 2rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .header-container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        .logo p {
+            font-size: 0.9rem;
+            color: #a0aec0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+            color: white;
+            text-align: center;
+            padding: 5rem 2rem;
+        }
+
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            color: #e2e8f0;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        .disclaimer {
+            background-color: #feebc8;
+            border-left: 4px solid var(--accent);
+            color: #744210;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            border-radius: 4px;
+            font-size: 0.95rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-top: 4px solid var(--secondary);
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        .card ul {
+            list-style-type: none;
+        }
+
+        .card li {
+            margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 1.2rem;
+        }
+
+        .card li::before {
+            content: "•";
+            color: var(--accent);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .about-section {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 3rem;
+        }
+
+        .about-section h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: #a0aec0;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 5rem;
+            font-size: 0.9rem;
+        }
+
+        footer a {
+            color: #e2e8f0;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: var(--accent);
+        }
+
+        @media (max-width: 600px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 1rem;
+            }
+            nav a {
+                margin: 0 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <h1>NewRo Solves</h1>
+                <p>Math Circle of New Rochelle, NY</p>
+            </div>
+            <nav>
+                <a href="#">Home</a>
+                <!-- Relative link to your percentile grid page -->
+                <a href="percentile-grid.html">Percentile Grids</a>
+                <a href="https://mathcircles.org/circles/newro-solves/" target="_blank">Network Profile</a>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h2>Connecting Young Minds with Mathematical Joy</h2>
+        <p>Supplements math education for students in the New Rochelle community through interactive exploration, problem-solving puzzles, and friendly competition.</p>
+    </section>
+
+    <main class="container">
+        
+        <div class="disclaimer">
+            <strong>Community Notice:</strong> NewRo Solves proudly supports and supplements local math education for families within the City School District of New Rochelle, operating as an independent community organization without direct district affiliation.
+        </div>
+
+        <section class="about-section">
+            <h3>Who We Are</h3>
+            <p>NewRo Solves introduces students to joyful, advanced mathematical concepts outside the typical school curriculum. We build critical thinking, mathematical intuition, and collaborative problem-solving frameworks. Our programs are brought to life with the incredible support of local high school student volunteers who help mentor younger mathematicians.</p>
+        </section>
+
+        <section class="grid">
+            <div class="card">
+                <h3>Elementary Program (K-5)</h3>
+                <p>Hosted monthly at the <strong>New Rochelle Public Library</strong>, this initiative focuses on open exploration.</p>
+                <br>
+                <ul>
+                    <li>Mathematical logic games & strategic puzzles</li>
+                    <li>Hands-on pattern recognition activities</li>
+                    <li>Low-floor, high-ceiling problem tasks</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Middle School Program (6-8)</h3>
+                <p>Tailored specifically for local middle school students looking for deeper geometric and algebraic challenges.</p>
+                <br>
+                <ul>
+                    <li>Math Olympiad preparation</li>
+                    <li>Advanced team problem-solving strategies</li>
+                    <li>Competitive game theory simulations</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Community & STEM Outreach</h3>
+                <p>We actively partner with regional schools to spread the love of math throughout Westchester County.</p>
+                <br>
+                <ul>
+                    <li>Interactive booths at local school STEM nights</li>
+                    <li>Engaging family-focused math puzzles</li>
+                    <li>Community math circles and resource sharing</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 NewRo Solves. Created for youth enrichment in New Rochelle, NY.</p>
+        <p style="margin-top: 0.5rem;">Data Tools: <a href="percentile-grid.html">Percentile Grid Visualization</a></p>
+    </footer>
+
+</body>
+</html>
