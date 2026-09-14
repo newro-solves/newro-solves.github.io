@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Math in Action! - Fall 2026 Program</title>
+  <style>
+    :root {
+      --primary-color: #1a365d;
+      --accent-color: #2b6cb0;
+      --bg-color: #f7fafc;
+      --card-bg: #ffffff;
+      --text-color: #2d3748;
+      --border-color: #e2e8f0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      line-height: 1.6;
+      color: var(--text-color);
+      background-color: var(--bg-color);
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    header {
+      border-bottom: 3px solid var(--primary-color);
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+    }
+
+    h1 {
+      color: var(--primary-color);
+      margin: 0 0 10px 0;
+      font-size: 2rem;
+    }
+
+    .tagline {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: var(--accent-color);
+      margin: 0;
+    }
+
+    .highlights {
+      background-color: #ebf8ff;
+      border-left: 4px solid var(--accent-color);
+      padding: 15px 20px;
+      margin-bottom: 25px;
+      border-radius: 0 4px 4px 0;
+    }
+
+    .highlights ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .highlights li {
+      margin-bottom: 8px;
+    }
+    
+    .highlights li:last-child {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.3rem;
+      margin-top: 30px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 5px;
+    }
+
+    .locations {
+      margin-bottom: 25px;
+    }
+
+    .locations ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    .schedule-table th, 
+    .schedule-table td {
+      padding: 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .schedule-table th {
+      background-color: var(--primary-color);
+      color: white;
+    }
+
+    .schedule-table tr:nth-child(even) {
+      background-color: #f8fafc;
+    }
+
+    .qr-section {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: #f7fafc;
+      border: 1px solid var(--border-color);
+      padding: 20px;
+      border-radius: 6px;
+      margin-bottom: 30px;
+    }
+
+    .qr-code {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+    }
+
+    .about-section {
+      background-color: #fffaf0;
+      border: 1px solid #feebc8;
+      padding: 20px;
+      border-radius: 6px;
+    }
+
+    .about-section h3 {
+      margin-top: 0;
+      color: #c05621;
+    }
+
+    .contact {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 10px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      .qr-section {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .schedule-table th, 
+      .schedule-table td {
+        padding: 8px 6px;
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>Math in Action! – Fall 2026 Program</h1>
+      <p class="tagline">Come play and see how professional mathematicians believe children should explore and learn.</p>
+    </header>
+
+    <section class="highlights">
+      <p>Games and puzzles that build problem-solving skills without feeling like math in school</p>
+      <ul>
+        <li><strong>Activities designed for students in grades K–8</strong>; parents should also participate; <strong>NO drop-offs</strong></li>
+        <li><strong>Open to the public:</strong> free of charge; not limited to families in CSDNR; invite friends to come</li>
+        <li><strong>Free of charge; registration not required:</strong> scan QR code below for reminder emails</li>
+      </ul>
+    </section>
+
+    <section class="locations">
+      <h2>Locations</h2>
+      <ul>
+        <li><strong>New Rochelle Public Library:</strong> 1 Library Plaza – activity room in children's section</li>
+        <li><strong>Huguenot Children's Library:</strong> 794 North Ave – basement level</li>
+        <li><strong>Iona University:</strong> 715 North Ave – LaPenta Business School, Room 308</li>
+      </ul>
+      <p><em>*For Iona University only: parents must sign a standard waiver form at the event.</em></p>
+    </section>
+
+    <section>
+      <h2>Schedule</h2>
+      <table class="schedule-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Time</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sep 16 (Wed)</td>
+            <td>5:00–6:00 PM</td>
+            <td>Iona LaPenta Rm 308</td>
+          </tr>
+          <tr>
+            <td>Sep 24 (Thu)</td>
+            <td>4:30–5:30 PM</td>
+            <td>New Rochelle Public Library</td>
+          </tr>
+          <tr>
+            <td>Sep 29 (Tue)</td>
+            <td>4:30–5:30 PM</td>
+            <td>Huguenot Children's Library</td>
+          </tr>
+          <tr>
+            <td>Oct 7 (Wed)</td>
+            <td>5:00–6:00 PM</td>
+            <td>Iona LaPenta Rm 308</td>
+          </tr>
+          <tr>
+            <td>Oct 20 (Tue)</td>
+            <td>4:30–5:30 PM</td>
+            <td>Huguenot Children's Library</td>
+          </tr>
+          <tr>
+            <td>Oct 22 (Thu)</td>
+            <td>4:30–5:30 PM</td>
+            <td>New Rochelle Public Library</td>
+          </tr>
+          <tr>
+            <td>Oct 28 (Wed)</td>
+            <td>5:00–6:00 PM</td>
+            <td>Iona LaPenta Rm 308</td>
+          </tr>
+          <tr>
+            <td>Nov 10 (Tue)</td>
+            <td>4:30–5:30 PM</td>
+            <td>Huguenot Children's Library</td>
+          </tr>
+          <tr>
+            <td>Nov 18 (Wed)</td>
+            <td>5:00–6:00 PM</td>
+            <td>Iona LaPenta Rm 308</td>
+          </tr>
+          <tr>
+            <td>Nov 19 (Thu)</td>
+            <td>4:30–5:30 PM</td>
+            <td>New Rochelle Public Library</td>
+          </tr>
+          <tr>
+            <td>Dec 1 (Tue)</td>
+            <td>4:30–5:30 PM</td>
+            <td>Huguenot Children's Library</td>
+          </tr>
+          <tr>
+            <td>Dec 17 (Thu)</td>
+            <td>4:30–5:30 PM</td>
+            <td>New Rochelle Public Library</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="qr-section">
+      <!-- Replace 'assets/nrsmc_form_qr.jpeg' with your actual image path -->
+      <img src="assets/nrsmc_form_qr.jpeg" alt="QR Code to receive reminder emails" class="qr-code">
+      <div>
+        <strong>Scan QR Code to receive reminder emails</strong>
+        <p style="margin: 5px 0 0 0; color: #718096;">(weekly or less frequent)</p>
+      </div>
+    </section>
+
+    <footer class="about-section">
+      <h3>NewRo Solves Math Circle</h3>
+      <p>Non-profit project that seeks to enhance math education for families in CSDNR:</p>
+      <ul>
+        <li>Features programs offering games, puzzles, and activities based on mathematics</li>
+        <li>Promotes exploration, logic, and reasoning that can help students understand how AI works</li>
+        <li>Offers FREE Math in Action! programs at New Rochelle Public Library since 2024</li>
+        <li>Offers activities at PTA STEM events for FREE since 2022</li>
+        <li>Facilitated by student volunteers from NRHS and Iona University</li>
+      </ul>
+      <p class="contact">Any questions? Please contact <a href="mailto:newro.solves@gmail.com">newro.solves@gmail.com</a></p>
+    </footer>
+  </div>
+
+</body>
+</html>
