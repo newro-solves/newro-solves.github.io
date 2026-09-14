@@ -270,13 +270,24 @@
     </section>
 
     <section class="qr-section">
-      <img src="/assets/nrsmc_form_qr.jpeg" alt="QR Code to receive reminder emails" class="qr-code">
+      <!-- QR Code updated to 240px square and pointed to your image path -->
+      <img src="/assets/nrsmc_form_qr.jpeg" alt="QR Code to receive reminder emails" class="qr-code" style="width: 240px; height: 240px; object-fit: contain;">
       <div>
-        <strong>Scan QR Code to receive reminder emails</strong>
-        <p style="margin: 5px 0 0 0; color: #718096;">(weekly or less frequent)</p>
+        <strong style="font-size: 1.35rem; display: block; color: var(--primary-color);">
+          Scan QR Code to receive reminder emails
+        </strong>
+        <p style="margin: 5px 0 10px 0; color: #718096; font-size: 1.05rem;">
+          (weekly or less frequent)
+        </p>
+        <p style="margin: 0; font-size: 1.05rem;">
+          Or visit directly: 
+          <a href="https://forms.gle/j7iPZy2UNRPnUoPK9" target="_blank" rel="noopener noreferrer" style="color: var(--accent-color); font-weight: bold; word-break: break-all;">
+            https://forms.gle/j7iPZy2UNRPnUoPK9
+          </a>
+        </p>
       </div>
     </section>
-
+    
     <footer class="about-section">
       <h3>NewRo Solves Math Circle</h3>
       <p>Non-profit project that seeks to enhance math education for families in CSDNR:</p>
