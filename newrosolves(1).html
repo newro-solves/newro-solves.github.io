@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>New Rochelle Solves | Free math games and puzzles for grades K–8</title>
+<meta name="description" content="New Rochelle Solves is a non-profit math program with games and puzzles for students in grades K–8. See upcoming sessions and contact us.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: rgb(240, 231, 252);
+  --ink: rgb(19, 35, 104);
+  --card: rgba(255, 255, 255, 0.92);
+  --accent: #5a3fd0;
+  --line: rgba(19, 35, 104, 0.15);
+  --shadow: 0 8px 18px rgba(19, 35, 104, 0.18);
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Fredoka", system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+a { color: var(--accent); text-underline-offset: 3px; }
+a:focus-visible, .btn:focus-visible { outline: 3px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+.wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+/* Header */
+header { padding: 20px 0; }
+.brand { display: flex; align-items: center; gap: 14px; }
+.logo { width: 72px; height: 72px; object-fit: contain; }
+h1 { margin: 0; font-size: clamp(30px, 5vw, 46px); font-weight: 600; line-height: 1.1; }
+
+/* Intro */
+.intro { padding: 24px 0 8px; max-width: 720px; margin: 0 auto; text-align: center; }
+.intro .lead { font-size: clamp(22px, 3vw, 28px); font-weight: 500; line-height: 1.35; margin: 0 0 16px; }
+.intro p { margin: 0 0 12px; }
+.btn {
+  display: inline-block; margin-top: 12px; padding: 12px 24px;
+  background: var(--ink); color: #fff; border-radius: 999px;
+  font-weight: 500; text-decoration: none;
+}
+.btn:hover { background: var(--accent); }
+
+/* Photos + testimonials */
+.showcase { display: grid; grid-template-columns: 1.4fr 1fr; gap: 32px; align-items: start; margin: 40px 0; }
+.photos { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.photos img {
+  width: 100%; height: 340px; object-fit: cover;
+  border-radius: 14px; box-shadow: var(--shadow); background: rgba(19, 35, 104, 0.08);
+}
+.quotes { display: grid; gap: 16px; }
+blockquote {
+  margin: 0; padding: 18px 20px; background: var(--card);
+  border-left: 6px solid var(--accent); border-radius: 14px; box-shadow: var(--shadow);
+}
+blockquote p { margin: 0 0 8px; font-size: 17px; }
+blockquote footer { padding: 0; font-size: 15px; font-weight: 500; }
+
+/* Schedule */
+h2 { font-size: clamp(26px, 4vw, 34px); margin: 48px 0 8px; font-weight: 600; }
+.note { margin: 0 0 20px; }
+.months { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+.month { background: var(--card); border-radius: 18px; padding: 18px 20px; box-shadow: var(--shadow); }
+.month h3 { margin: 0 0 8px; font-size: 22px; }
+.month ul { list-style: none; margin: 0; padding: 0; }
+.month li { padding: 10px 0; border-top: 1px solid var(--line); display: grid; gap: 2px; }
+.month li:first-child { border-top: 0; }
+.date { font-weight: 600; }
+.where { font-size: 16px; }
+
+/* Contact */
+.contact { margin: 48px 0 0; padding: 32px 0 48px; border-top: 2px solid var(--line); }
+.contact h2 { margin-top: 0; }
+.contact p { margin: 0 0 8px; }
+
+@media (max-width: 800px) {
+  .showcase { grid-template-columns: 1fr; }
+  .photos img { height: 240px; }
+  .logo { width: 56px; height: 56px; }
+}
+@media (max-width: 480px) {
+  body { font-size: 17px; }
+  .photos { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap brand">
+    <img class="logo" src="./notext.png" alt="New Rochelle Solves logo">
+    <h1>New Rochelle Solves</h1>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="intro">
+      <p class="lead">Math games and puzzles that build problem-solving skills for kids in grades K–8, without feeling like math in school.</p>
+      <p>New Rochelle Solves is a non-profit project that enhances math education for elementary and middle school students.</p>
+      <p>With Math in Action, your child learns math the way professional mathematicians believe it should be taught.</p>
+      <a class="btn" href="#dates">See upcoming sessions</a>
+    </section>
+
+    <section class="showcase" aria-label="Photos and parent and student feedback">
+      <div class="photos">
+        <img src="./puzzle1.jpg" alt="A math puzzle used in a New Rochelle Solves session">
+        <img src="./puzzle2.jpg" alt="Another math puzzle from a session">
+      </div>
+      <div class="quotes">
+        <blockquote>
+          <p>"Math Olympiad is a fun and playful way to learn math, but it also really challenges you to think hard and find smart solutions. Whether you're new to math or already know things like pi or game thinking strategies, each session helps you go deeper. I always learn something interesting, and I look forward to every class."</p>
+          <footer>6th grader at ALMS</footer>
+        </blockquote>
+        <blockquote>
+          <p>"My daughter enjoyed it and learned from it... I appreciated the entire program and thought that it was helpful towards her academic progress."</p>
+          <footer>Mother of 6th grader at IEYMS</footer>
+        </blockquote>
+        <blockquote>
+          <p>"My son would complain about going but once he was there he always had a blast and enjoyed the games. He would come home saying how much fun he had … It was always a hit!"</p>
+          <footer>Mother of 7th grader at ALMS</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="dates" aria-labelledby="dates-title">
+      <h2 id="dates-title">Upcoming dates</h2>
+      <p class="note">Sessions are run by student volunteers from NRHS and Iona University.</p>
+      <div class="months" id="months">
+        <div class="month"><h3>September</h3><ul>
+          <li data-date="2026-09-16"><span class="date">Wed, Sep 16 · 5:00–6:00 PM</span><span class="where">Iona LaPenta</span></li>
+          <li data-date="2026-09-24"><span class="date">Thu, Sep 24 · 4:30–5:30 PM</span><span class="where">New Rochelle Public Library</span></li>
+          <li data-date="2026-09-29"><span class="date">Tue, Sep 29 · 4:30–5:30 PM</span><span class="where">Huguenot Children's Library</span></li>
+        </ul></div>
+        <div class="month"><h3>October</h3><ul>
+          <li data-date="2026-10-07"><span class="date">Wed, Oct 7 · 5:00–6:00 PM</span><span class="where">Iona LaPenta</span></li>
+          <li data-date="2026-10-20"><span class="date">Tue, Oct 20 · 4:30–5:30 PM</span><span class="where">Huguenot Children's Library</span></li>
+          <li data-date="2026-10-22"><span class="date">Thu, Oct 22 · 4:30–5:30 PM</span><span class="where">New Rochelle Public Library</span></li>
+          <li data-date="2026-10-28"><span class="date">Wed, Oct 28 · 5:00–6:00 PM</span><span class="where">Iona LaPenta</span></li>
+        </ul></div>
+        <div class="month"><h3>November</h3><ul>
+          <li data-date="2026-11-10"><span class="date">Tue, Nov 10 · 4:30–5:30 PM</span><span class="where">Huguenot Children's Library</span></li>
+          <li data-date="2026-11-18"><span class="date">Wed, Nov 18 · 5:00–6:00 PM</span><span class="where">Iona LaPenta</span></li>
+          <li data-date="2026-11-19"><span class="date">Thu, Nov 19 · 4:30–5:30 PM</span><span class="where">New Rochelle Public Library</span></li>
+        </ul></div>
+        <div class="month"><h3>December</h3><ul>
+          <li data-date="2026-12-01"><span class="date">Tue, Dec 1 · 4:30–5:30 PM</span><span class="where">Huguenot Children's Library</span></li>
+          <li data-date="2026-12-17"><span class="date">Thu, Dec 17 · 4:30–5:30 PM</span><span class="where">New Rochelle Public Library</span></li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Questions? Get in touch</h2>
+      <p>Omer Uzun, Founder, CSDNR Parent, PTA STEM Mentor</p>
+      <p><a href="mailto:newro.solves@gmail.com">newro.solves@gmail.com</a></p>
+    </section>
+  </div>
+</main>
+
+<script>
+// Hide sessions that have already happened, and any month left empty.
+(function () {
+  var today = new Date(); today.setHours(0, 0, 0, 0);
+  document.querySelectorAll('li[data-date]').forEach(function (li) {
+    if (new Date(li.dataset.date + 'T23:59:59') < today) li.hidden = true;
+  });
+  document.querySelectorAll('.month').forEach(function (m) {
+    if (!m.querySelector('li:not([hidden])')) m.hidden = true;
+  });
+})();
+</script>
+</body>
+</html>
